@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="Notice Board" icon-name="utility:announcement">
+        <div class="slds-p-around_medium notice-box" style={containerStyle}>
+            <!-- Heading centered and in bold -->
+            <div class="slds-text-align_center slds-text-heading_medium slds-text-title_bold slds-m-bottom_small heading-text">
+                {labels.noticeHeading}
+            </div>
+
+            <!-- Body centered and in italics -->
+            <div class="slds-text-align_center slds-text-body_regular slds-m-bottom_medium body-text">
+                {labels.noticeBody}
+            </div>
+
+            <!-- Action Button -->
+            <div class="slds-text-align_center">
+                <lightning-button 
+                    variant="brand" 
+                    label={buttonLabel} 
+                    onclick={handleReportError}>
+                </lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+</template>
